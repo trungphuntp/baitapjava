@@ -11,7 +11,7 @@ public class Main {
 			Scanner scanLuaChon = new Scanner(System.in);
 			List<SinhVien> listSv = new ArrayList<SinhVien>();
 			do {
-				System.out.println("=================== QUẢN LÝ SINH VIÊN =================");
+				System.out.println("====================== QUẢN LÝ SINH VIÊN =====================");
 				System.out.println("1. Thêm sinh viên.");
 				System.out.println("2. Xếp loại tất cả sinh viên.");
 				System.out.println("3. In ra điểm TB cao nhất.");
