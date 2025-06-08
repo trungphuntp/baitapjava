@@ -20,7 +20,7 @@ public class Main {
 				System.out.println("6. Tìm sinh viên theo mã sinh viên.");
 				System.out.println("7. Xóa sinh viên theo mã sinh viên.");
 				System.out.println("8. Xuất toàn bộ danh sách sinh viên");
-				System.out.println("0. Thoát.");
+				System.out.println("0. Thoát chương trình.");
 				luaChon = Integer.parseInt(scanLuaChon.nextLine());
 				if (luaChon == 1) {
 					SinhVien sv = new SinhVien();
