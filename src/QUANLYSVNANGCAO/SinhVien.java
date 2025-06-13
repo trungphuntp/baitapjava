@@ -14,15 +14,21 @@ public class SinhVien {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public SinhVien(String hoTen, String maSv, int diemToan, int diemLy, int diemHoa) {
+	
+	
+	 
+	public SinhVien(String hoTen, String maSv, double diemToan, double diemLy, double diemHoa) {
+		super();
 		this.hoTen = hoTen;
 		this.maSv = maSv;
 		this.diemToan = diemToan;
 		this.diemLy = diemLy;
 		this.diemHoa = diemHoa;
 	}
-	
-	 
+
+
+
+
 	// GETTER / SETTER
 	public String getHoTen() {
 		return hoTen;
@@ -95,15 +101,23 @@ public class SinhVien {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Nhập thông tin sinh viên!");
 		System.out.println("Nhập tên sinh viên : ");
-		this.hoTen = scan.nextLine();
+		this.hoTen = scan.nextLine().trim();
 		System.out.println("Nhập mã sinh viên : ");
-		this.maSv = scan.nextLine();
+		this.maSv = scan.nextLine().trim();
 		System.out.println("Nhập điểm Toán của sinh viên "+ this.hoTen+" :");
-		this.diemToan = Double.parseDouble(scan.nextLine());
+		this.diemToan = Double.parseDouble(scan.nextLine().trim());
 		System.out.println("Nhập điểm Lý của sinh viên "+ this.hoTen+" :");
-		this.diemLy = Double.parseDouble(scan.nextLine());
+		this.diemLy = Double.parseDouble(scan.nextLine().trim());
 		System.out.println("Nhập điểm Hóa của sinh viên "+ this.hoTen+" :");
-		this.diemHoa = Double.parseDouble(scan.nextLine());
+		this.diemHoa = Double.parseDouble(scan.nextLine().trim());
+		
+		/**
+		 * 15s : chừa ra 15 kí tự space
+		 * 6.2f : 6: chừa ra 6 ký từ space - 2: chừa ra 2 số thập phân
+		 * 
+		 */
+//		System.out.printf("| %-15s | %-10s | %6.2f | %6.2f | %6.2f | %8.2f | %-15s |%n", hoTen, maSv, diemToan, diemLy, diemHoa, tinhDiemTB(), xepLoaiSv());
+		
 	}
 	
 	public void xuatThongTin() {
